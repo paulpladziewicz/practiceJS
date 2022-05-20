@@ -2,8 +2,9 @@ describe('Subarrays with slice(), splice(), fill(), and copyWithin()', () => {
     let word = 'Hello, World';
     let arr = [1,2,3,4,5,6,7,8,9,10];
 
-    // Slice, returns new array of specified values
     test('slice()', () => {
+        // Slice, returns new array of specified values
+
         let value = word.slice(7,10)
         expect(value).toBe('Wor');
 
@@ -80,6 +81,7 @@ describe('Subarrays with slice(), splice(), fill(), and copyWithin()', () => {
         // modifies in place, and returns the modified array
         // array length will not change
         // .copyWithin(destination index, start, end)
+
         arr = [1,2,3,4,5,6,7,8,9,10];
 
         let value = arr.copyWithin(5, 0, 5)
