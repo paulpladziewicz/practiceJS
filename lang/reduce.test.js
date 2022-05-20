@@ -6,10 +6,13 @@ describe('reduce() & reduceRight()', () => {
 
         // Accumulator is the first element of the array if no initial value passed
         // means without initial value, the first reducer func call will be with (a[0], a[1])
+        // (accumulator, value, index, array) for reducer params
         let value = a.reduce((x, y) => x + y);
         expect(value).toBe(55);
 
         value = a.reduce((x, y) => x + y, 10);
         expect(value).toBe(65);
+
+        // reduceRight works just like reduce, except that it processes the array from highest index to lowest (right-to-left)
     })
 })
