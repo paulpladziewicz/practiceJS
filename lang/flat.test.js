@@ -3,7 +3,7 @@ describe('flat() & flatMap()', () => {
         // flatten arrays which have arrays
         // optional argument for # of levels deep, 1 by default
         // creates and returns a new array
-
+        
         let a = [1, 2, [3, 4]];
 
         let value = a.flat();
