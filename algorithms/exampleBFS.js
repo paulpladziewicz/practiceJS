@@ -1,12 +1,15 @@
-export class Node {
+import {Queue} from "../dataStructures/queue.js";
+
+class Node {
     constructor(value) {
         this.value = value;
-        this.right = null;
         this.left = null;
+        this.right = null;
+        this.marked = false;
     }
 }
 
-export class BinaryTree
+class BinaryTree
 {
     constructor()
     {
@@ -41,7 +44,7 @@ export class BinaryTree
     }
 }
 
-export const BST = new BinaryTree();
+const BST = new BinaryTree();
 BST.insert(15);
 BST.insert(25);
 BST.insert(10);
@@ -59,3 +62,12 @@ BST.insert(27);
 //      7  13 22  27
 //     / \    /
 //    5   9  17
+
+function BFS(graph, value) {
+    let queue = new Queue();
+    return search(graph.root, value);
+}
+
+function search(node, value) {
+    if ()
+}

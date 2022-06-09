@@ -13,7 +13,7 @@ export function bubbleSort(array) {
             }
         }
 
-        unsortedUntilIndex--
+        unsortedUntilIndex--;
     }
 
     return array;

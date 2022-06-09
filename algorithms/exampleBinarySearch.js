@@ -1,3 +1,4 @@
+// O(log n) time | O(1) space
 export function binarySearch(array, search_value) {
     let lower_bound = 0;
     let upper_bound = array.length - 1;

@@ -65,8 +65,15 @@ export class BinarySearchTree {
         }
     }
 
-    postOrder(node)
-    {
+    postOrder(node) {
+        if (node !== null) {
+            this.postOrder(node.left);
+            this.postOrder(node.right);
+            console.log(node.value);
+        }
+    }
+
+    postOrder(node) {
         if (node !== null) {
             this.postOrder(node.left);
             this.postOrder(node.right);

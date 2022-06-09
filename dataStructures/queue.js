@@ -14,7 +14,7 @@ class Node {
     }
 }
 
-class Queue {
+export class Queue {
     first = null;
     last = null;
 
