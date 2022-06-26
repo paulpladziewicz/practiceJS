@@ -30,6 +30,7 @@ class LinkedList {
 
         let node = this.head;
 
+        // while loops are great when you don't know how many steps are required
         while (node.next !== null) {
             node = node.next;
         }
@@ -44,7 +45,7 @@ class LinkedList {
 
         let count = 1;
 
-        while (n.next !== null) {
+        while (node.next !== null) {
             count++;
             node = node.next;
         }

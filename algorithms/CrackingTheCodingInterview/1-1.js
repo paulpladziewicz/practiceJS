@@ -1,7 +1,4 @@
-const arr = ['a', 'b', 'a', 'c', 'a', 'd', 'g', 'f', 'e', 'd'];
-
 // Solution 1, with other data structures
-
 function UniqueStrings(arr) {
     if (!arr) throw new Error('Array not defined.');
 
