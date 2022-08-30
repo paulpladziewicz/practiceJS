@@ -47,6 +47,7 @@ class LinkedList {
 
         while (node.next !== null) {
             count++;
+            count++;
             node = node.next;
         }
 
@@ -54,7 +55,7 @@ class LinkedList {
     }
 
     clear() {
-        this.head = null;
+        this.head = null; // this should be a new value
     }
 
     getFirst() {
@@ -74,6 +75,22 @@ class LinkedList {
 
         return node;
     }
+
+    index_of(value) {
+       let currentNode = this.head;
+       let currentIndex = 0;
+
+       if (currentNode.data === value) {
+           return currentIndex;
+       }
+
+       while (currentNode.next !== null) {
+           currentNode = currentNode.next;
+           currentIndex++;
+       };
+
+       return null;
+    }
 }
 
 let a = new Node(1);
@@ -82,4 +99,4 @@ let b = new LinkedList(a)
 b.appendToTail(2);
 b.appendToTail(3);
 
-console.log(b.getLast())
+console.log(b.index_of(3));

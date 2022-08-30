@@ -32,4 +32,4 @@ function bottomUpFib(n) {
     return b;
 }
 
-console.log(bottomUpFib(10));
+console.log(fibMemo(10, memoObject));

@@ -41,7 +41,7 @@ export class BinaryTree
     }
 }
 
-export const BST = new BinaryTree();
+const BST = new BinaryTree();
 BST.insert(15);
 BST.insert(25);
 BST.insert(10);
